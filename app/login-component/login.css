@@ -1,0 +1,40 @@
+.loginPage{
+    position: relative;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    background: rgba(96, 96, 96, 0.2);
+}
+.loginPage .loginContainer{
+    width: 25%;
+    background: #fff;
+    height: 40%;
+    right: 0;
+    transform: translateY(50%);
+    left: 0;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #95c4dfa2;
+}
+.loginPage .loginContainer h1{
+    font-family: inherit;
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #606060;
+    border-radius: 4px;
+}
+#login{
+    
+    margin-left: 125px;
+    margin-top: 40px;
+    background-color: #0a98e9;
+    height: 30px;
+    width: 90px;
+}

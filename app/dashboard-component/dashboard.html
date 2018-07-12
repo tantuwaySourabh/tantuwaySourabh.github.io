@@ -1,0 +1,26 @@
+
+<body  data-ng-app="toDoApp" data-ng-controller="dashboardCtrl">
+
+
+    <br><br><br><br>
+    <section class = "todoSection">
+            <div> <label style="color:aliceblue">ToDo Name</label>
+                <input type="text" id="fn" data-ng-model="mytodoObj.name">
+                </div>
+                <div><label style="color:aliceblue">ToDo Description</label>
+                <textarea id="ln" data-ng-model="mytodoObj.description">  </textarea>
+                </div>
+                <div>
+                <button ng-click="addData()" id="add">ADD</button>
+                </div>
+                
+                
+                <ul>
+                    <li ng-repeat="todo in list" ng-class = "{'strikeoff': todo.checked}" ng-click="showDesc($index)" ng-mouseover="open=true" ng-mouseleave="open=false" style="color:aliceblue"><input type = "checkbox" ng-model="todo.checked" id="check"></input> {{todo.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button ng-click="delete($index)" ng-show="open">delete</button></li>
+                </ul> 
+    </section>
+           
+        
+    <aside><div id='desc' style="color:black"></div></aside>
+    </body>

@@ -1,0 +1,20 @@
+
+<header>
+    My ToDo App!
+    
+    <div class="dropdown">
+        <span id="icon">{{username | initials | uppercase}}</span>
+        <div class="dropdown-content">
+          <a href="">{{username}}</a>
+          <a href="" data-ng-click="gotoDashboard()">Dashboard</a>
+          <a href="" data-ng-click="gotoTeam()">Team</a>
+          <a href="" data-ng-click="logout()">Logout</a>
+        </div>
+      </div>
+      
+</header>
+
+    <body>
+        
+        <ui-view></ui-view>
+    </body>

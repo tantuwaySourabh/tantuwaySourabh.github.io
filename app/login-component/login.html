@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body data-ng-app="toDoApp" data-ng-controller="loginCtrl">
+        <form>
+               <div><label>Username:</label>
+                <input type=text id=username></div>
+                <div><label>Password:</label>
+                <input type=password id=pwd></div>
+                <div><button data-ng-click='login()'>Login</button></div>
+
+                
+        </form>
+        <script>
+                function store_data(){
+                  var input = document.getElementById("username");
+                  localStorage.setItem("username", input.value);
+                }
+        </script>
+        
+        
+    </body>
+</html> -->
+                                                                                                                                           
+<div class = "loginPage">
+        <div class = "loginContainer">
+            
+                <h1>Please login</h1>
+                <div><input type = "text" placeholder="Username" id="username" data-ng-model="userObj.username"></div><br>
+                <div><input type = "password" placeholder="Password" id="pwd" data-ng-model="userObj.password"></div>
+                
+    <button data-ng-click="login()" id="login">Login</button>
+    </div>
+</div>
+    
+    

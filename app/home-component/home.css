@@ -1,0 +1,125 @@
+header{    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0a98e9;
+    color: black;
+    height: 60px;
+    line-height: 2;
+    font-size: 25px;
+    text-align: center;
+}
+header ul{
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+float: left;
+line-height: 3;
+margin-right: 10px;
+}
+header ul li button{
+    height: 35px;
+    color: #fff;
+    width: 100px;
+    outline: none;
+    border: 1px solid #fff;
+    background: #0a98e9;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+aside{
+    width: 40%;
+    float: right;
+    background: rgba(96, 96, 96, 0.15);
+    height: calc(100% - 50px);
+    right: 0px;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    z-index: -1;
+    border-left: 1px solid rgba(96, 96, 96, 0.2);
+}
+main{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: calc(100% - 50px);
+    width: 80%;
+}
+
+.strikeoff{
+    text-decoration: line-through;
+}
+#icon{
+    height: 40px;
+    width: 40px;
+    background-color: plum;
+    color: black;
+    border: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 5px;
+    float: right;
+    font-size: 20;
+    display: inline-block;
+    line-height: 2;
+    text-align: center;
+}
+
+/* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+} */
+
+.dropdown {
+    float: right;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 45px;
+    right: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover #icon {background-color: #3e8e41;} */
+#img{
+    z-index: -1;
+
+}
+body{
+    font-size: 20px;font-size: 20px;
+    background: url(/assets/tree.png);
+    height: 100%;
+    background-repeat: round;
+    color: #000 !important;
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 50px;
+}
